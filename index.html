@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahil's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img style="width: 100px;" src="images/Website Images/Home/s-removebg-preview.png">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#portfolio">Expertise</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <a class="menu Close" onclick="closemenu()">Close</a>
+                </ul>
+                <a class="menu" onclick="openmenu()">Menu</a>
+            </nav>
+            <div class="header-text">
+                <p>Programmer/Finance Enthusiast</p>
+                <h1>Hi, I am <span>Sahil Asawa</span> from Hyderabad,<br> pursuing B.Tech in Computer Science at IIT Kharagpur
+                </h1>
+
+            </div>
+        </div>
+    </div>
+    <div id ="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img  src="images/IMG-5183.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">I am Sahil Asawa. I am a first year undergraduate student of the Department of
+                        Computer Science and Engineering enrolled in it’s B.Tech course. I am from Hyderabad. I am always
+                        looking forward to solve problems, case studies and learn about discrete mathematics, finance,
+                        business strategy for which I am currently working as a Consultant at 180DC IIT Kharagpur. I
+                        love working in teams and have developed management and leadership skills through my tenure in
+                        SWG. Apart from that, I am interested in coding and currently learning Python, Basics of AIML and
+                        C++ for Competitive Programming.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id=""skills>
+                        <ul>
+                            <li><span>Web Development</span></li>
+                            <li><span>Design</span></li>
+                            <li><span>C/C++</span></li>
+                            <li><span>Team Management</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>SWG</span></li>
+                            <li><span>180DC</span></li>
+                            <li><span>TCC</span></li>
+                            <li><span>TTG</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Schooling</span><br>Slate-The School CGPA-10 <br>Intermediate – FIITJEE CGPA-9.53<br> IIT
+                                Kharagpur</li>
+                            <li><span>Tests</span><br>JEE Mains –AIR 295<br>JEE Advanced – AIR 287<br>BITSAT-364/390<br>KVPYSA AIR 320, KVPY-SX AIR 219<br>PRMO 2019, IOQM 2021, IOQC 2022, IOQA 2022<br> Atlas
+                                Fellowship-Finalist</li>
+                           
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Expertise</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Website Images/Portfolio/AIML.jpg">
+                <div class="layer">
+                    <h3>Programming/AIMl</h3>
+                    <p>Basic knowledge about C/C++ and a beginner in Python</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Website Images/Portfolio/Finance.png"> 
+                <div class="layer">
+                    <h3>Finance</h3>
+                    <p>Have interest in learning about Trading and Quantitative Finance and Research</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Website Images/Portfolio/WebDev.png">
+                <div class="layer">
+                    <h3>Web Development</h3>
+                    <p>Beginner and interested in learning more about HTML/CSS/JSS</p>
+                </div> 
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle" >Contact Me</h1>
+                <p>asawasahil@gmail.com</p>
+                <p>9849812189</p>
+               
+                    <div class="social-icons">
+                         <a href="https://www.facebook.com/profile.php?id=100087187377653">Facebook</a>
+                         <a href="https://www.instagram.com/sahil__1104/">Instagram</a>
+                         <a href="https://www.linkedin.com/in/sahil-asawa-4a5a32258/">LinkedIn</a>
+                    </div>
+                    <a class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+    <div class="name">
+        <p>Made by Sahil Asawa</p>
+    </div>
+</div>
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+       
+ <script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+ </script>   
+    
+</body>
+</html>
